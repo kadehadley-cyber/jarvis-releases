@@ -4,6 +4,14 @@ J.A.R.V.I.S. for your computer: the animated arc-reactor HUD, "Hey Jarvis" voice
 control, weather, markets, directions, smart-home and suit control, all powered
 by your own Cloudflare Worker.
 
+## New in 1.2.2: two Chrome windows
+
+- With two **Chrome** windows open in KODA OS, a page in the window behind can
+  no longer take the keyboard from the page you are typing in. The keyboard
+  then rests with the window in front; click your page to go on.
+- A page you entered with Escape in the address bar can no longer pull the
+  keyboard back when you Tab out of it.
+
 ## New in 1.2.1: Chrome in KODA OS keeps your keyboard yours
 
 - A web page open in KODA OS's **Chrome** can no longer take the keyboard by
