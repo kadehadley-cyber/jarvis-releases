@@ -4,6 +4,25 @@ J.A.R.V.I.S. for your computer: the animated arc-reactor HUD, "Hey Jarvis" voice
 control, weather, markets, directions, smart-home and suit control, all powered
 by your own Cloudflare Worker.
 
+## New in 1.2.3: more ways a page could reach your keyboard, closed
+
+- When you went from **Chrome**'s address bar to the page with Escape, or a
+  panel that opened and closed by itself (Spotlight, for one) gave the keyboard
+  back to the page, a page in a Chrome window behind could still take the
+  keyboard from the page you were typing in. It no longer can, and the keyboard
+  now goes back to your page: click the field you were in to go on.
+- A page that had been hidden for taking the keyboard, or one behind the lock
+  screen, could still pull the keyboard to itself in a way hiding does not
+  stop; in testing one read about a third of a lock-screen password. A hidden
+  page that gets the keyboard again is now closed. Click its empty page to
+  load it again.
+- While you were in another browser tab, a page in a Chrome window behind
+  could take the keyboard unseen and read what you typed when you came back.
+  It is refused there too now, and the keyboard is where you left it.
+- Text you drop on the address bar, a note or Spotlight while a page has the
+  keyboard now takes the keyboard to that field. Before, what you typed next
+  went on into the page.
+
 ## New in 1.2.2: two Chrome windows
 
 - With two **Chrome** windows open in KODA OS, a page in the window behind can
